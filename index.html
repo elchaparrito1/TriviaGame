@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/style.css/style.css">
+    <link rel="stylesheet" href="./assets/style.css/reset.css">
+
+    <title>Trivia</title>
+</head>
+<body>
+
+
+
+            <!-- Header -->
+    <section class="masthead d-flex">
+        <div class="container text-center my-auto">
+          <div class="box">
+          <h1 class="mb-1">Historical Trivia</h1>
+          <h3 class="mb-5">
+            <em>Click the button below to test your knowledge. Just don't forget about the timer!</em>
+          </h3>
+          </div>
+          <button class="btn btn-primary btn-xl js-scroll-trigger" id="start" onclick="startQuiz()">Start Game</button>
+        </div>
+      </section>
+
+
+    <div id="hidden">
+      <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+            <div class="col-lg-8" id="center">
+                <div id="time-remaining">Time Remaining: <span id="time">01:30</span></div>
+               </div>
+      <div id="quiz-container"></div>
+      <button class="btn btn-primary btn-xl js-scroll-trigger" id="end" onclick="showResults()">Submit</button>
+    </div>
+    <div class="col-lg-2"></div>
+      </div>
+  
+    </div>
+
+    <div id ="results-container"></div>
+  
+
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="./assets/app.js/app.js"></script>
+</body>
+</html>
